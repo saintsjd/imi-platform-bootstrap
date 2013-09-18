@@ -8,30 +8,130 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>imi platform bootstrap</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <!--[if lt IE 9]>
+        <!-- build:js scripts/vendor/html5shiv-respond.js -->
+        <script src="bower_components/bootstrap/assets/js/html5shiv.js"></script>
+        <script src="bower_components/bootstrap/assets/js/respond.min.js"></script>
+        <!-- endbuild -->
+        <![endif]-->
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <nav class="navbar navbar-default" role="navigation" id="topnav">
+            <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">IMI Analyst</a>
+          </div>
 
-        <div class="hero-unit">
-          <h1>'Allo, 'Allo!</h1>
-          <p>You now have</p>
-          <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>Modernizr</li>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+            </div><!-- .container -->
+        </nav>
 
-          </ul>
+        <div id="filter-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1" id="filter-bar-label">
+                        <p class="text-center" style="padding-top:12px;">
+                        <span class="glyphicon glyphicon-filter"></span>
+                        <br>
+                        <small>Data<br>Filters</small>
+                        </p>
+                    </div>
+                    <div class="col-xs-3 filter-btn">
+                        <a href="#">
+                        <strong>Products</strong>
+                        <br>
+                        <small>Abrasives, Brushes, Chemicals...</small>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 filter-btn">
+                        <a href="#">
+                            <strong>Geography</strong>
+                            <br>
+                            <small>35 Counties, AZ, CO, UT</small>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 filter-btn active">
+                        <a href="#">
+                        <strong>Customer Segment</strong>
+                        <br>
+                        <small>2000-2599, 2800-3299, 3333-7777, 8000-9000 </small>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 filter-btn">
+                        <a href="#">
+                        <strong>Company Size</strong>
+                        <br>
+                        <small>All sizes</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div id="product-filter" class="filter">
+            <div class="container">
+            <h3>Choose Products:</h3>
+            </div>
+        </div>
+        <div id="geo-filter" class="filter">
+            <div class="container">
+            <h3>Choose Geography</h3>
+            </div>
+        </div>
+        <div id="seg-filter" class="filter">
+            <div class="container">
+            <h3>Choose Customer Segments</h3>
+            </div>
+        </div>
+        <div id="size-filter" class="filter">
+            <div class="container">
+            <h3>Choose Company Sizes</h3>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1>Report Name here</h1>
+
+        </div>
+
+
 
 
         <!-- build:js scripts/vendor.js -->
@@ -51,6 +151,7 @@
         </script>
 
         <!-- build:js scripts/main.js -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
