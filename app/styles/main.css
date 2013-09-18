@@ -10,6 +10,10 @@ font-weight: bold;
 color: #ffffff;    
 }
 
+.label-primary {
+background: #00adef;
+}
+
 #topnav {
     background-color: #00AEEF;
     border-radius: 0;
@@ -77,4 +81,6 @@ color: #ffffff;
     background-color: rgb(231, 231, 231);
     color: #777777;
     border-bottom: 1px solid rgb(231, 231, 231);
+    display: none;
+    padding-bottom: 20px;
 }
